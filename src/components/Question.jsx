@@ -51,9 +51,9 @@ export default function Question(){
             setStartAgain(prevStart => !prevStart)
         }
 
-        const questionArray = quiz.map((q, index) => (
+        const questionArray = quiz.map((item, index) => (
             <QuizItems
-                q={q}
+                q={item}
                 key={index}
                 name={`q${index + 1}`}
                 handleChange={handleChange}
